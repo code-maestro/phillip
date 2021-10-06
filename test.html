@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> test </title>
+
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+  
+  <header>
+    <nav class="topnav">
+      
+        <div class="active" id="registration-form"> REGISTRATION FORM </a>
+        <div id="view-form" > VIEW FORM </a>
+        <div id="update-form" > UPDATE FORM </a>
+
+    </nav>
+  </header>
+
+  <main>
+    <!-- REGISTRATION FORM -->
+    <section id="registration">
+
+      <div class="container">
+
+        <form action="" method="post">
+          
+          <h2>
+            REGISTRATION FORM
+          </h2>
+
+          <div class="departments">
+            <button class="select"> SELECT A DEPARTMENT </button>
+            <div class="list">
+              <input type="text" class="links" value="RADIOLOGY">
+              <input type="text" class="links" value="OBS AND GYN">
+              <input type="text" class="links" value="SURGERY">
+              <input type="text" class="links" value="ENT">
+              <input type="text" class="links" value="ORTHOPEDICS">
+            </div>
+          </div>
+          
+          <label for="equipment"> Equipment Table </label>
+          <div class="equipment">
+            <input type="text" name="equipment-name" placeholder="Equipment Name" required>
+            <input type="text" name="equipment-model" placeholder="Equipment Model" required>
+            <input type="text" name="equipment-manufacturer" placeholder="Equipment Manufacturer Name" required>
+            <input type="text" name="equipment-serial-no" placeholder="Equipment Serial Number" required>
+            <input type="text" name="equipment-status" placeholder="Equipment Status" required>
+            <input type="text" name="equipment-quantity" placeholder="Equipment Quantity" required>
+          </div>
+
+          <label for="equipment"> Engineers Table </label>
+          <div class="engineers">
+            <input type="text" name="engineer-name" placeholder="Engineer's Name" required>
+          </div>
+
+          <label for="manufacturer"> Manufacturer's Table </label>
+          <div class="engineers">
+            <input type="text" name="manufacturer-name" placeholder="Manufacturer's Name" required>
+            <input type="text" name="manufacturer-country" placeholder="Manufacturer's Country" required>
+          </div>
+
+          <label for="servicing"> ServicingTable </label>
+          <div class="servicing">
+            <input type="datetime-local" name="servicing-date" placeholder="Servicing Date and Time">
+          </div>
+
+          <input type="submit" name="submit" value=" SUBMIT ">
+
+        </form>
+
+      </div>
+
+    </section>
+
+    <!-- VIEW SECTION -->
+    <section id="view">
+
+      <div class="container">
+
+        <h2>
+          VIEW FORM
+        </h2>
+
+        <form action="" method="post">
+            
+          <input type="text" name="equipment-name" placeholder="Equipment Name" required>
+            
+          <input type="text" name="equipment-model" placeholder="Equipment Model" required>
+          
+          <input type="text" name="equipment-manufacturer" placeholder="Equipment Manufacturer Name" required>
+          
+          <input type="text" name="equipment-serial-no" placeholder="Equipment Serial Number" required>
+          
+          <input type="text" name="equipment-status" placeholder="Equipment Status" required>
+          
+          <input type="text" name="equipment-quantity" placeholder="Equipment Quantity" required>
+
+          <input type="text" name="engineer-name" placeholder="Engineer's Name" required>
+          
+          <input type="text" name="manufacturer-name" placeholder="Manufacturer's Name" required>
+                
+          <input type="text" name="manufacturer-country" placeholder="Manufacturer's Country">
+        
+          <input type="datetime-local" name="servicing-date" placeholder="Servicing Date and Time">
+        
+          <input type="submit" name="submit" value=" SUBMIT ">
+
+        </form>
+
+      </div>
+
+    </section>
+
+    <!-- UPDATE SECTION -->
+    <section id="update">
+
+      <div class="container">
+
+        <h2>
+          UPDATE FORM
+        </h2>
+
+        <form action="" method="post">
+            
+          <input type="text" name="equipment-name" placeholder="Equipment Name" required>
+            
+          <input type="text" name="equipment-model" placeholder="Equipment Model" required>
+          
+          <input type="text" name="equipment-manufacturer" placeholder="Equipment Manufacturer Name" required>
+          
+          <input type="text" name="equipment-serial-no" placeholder="Equipment Serial Number" required>
+          
+          <input type="text" name="equipment-status" placeholder="Equipment Status" required>
+          
+          <input type="text" name="equipment-quantity" placeholder="Equipment Quantity" required>
+
+          <input type="text" name="engineer-name" placeholder="Engineer's Name" required>
+          
+          <input type="text" name="manufacturer-name" placeholder="Manufacturer's Name" required>
+                
+          <input type="text" name="manufacturer-country" placeholder="Manufacturer's Country">
+        
+          <input type="datetime-local" name="servicing-date" placeholder="Servicing Date and Time">
+        
+          <input type="submit" name="submit" value=" SUBMIT ">
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+
+  <script>
+
+    let click = document.querySelector('.select');
+
+    let list = document.querySelector('.list');
+
+    let registration = document.getElementById("registration-form");
+    
+    let view = document.getElementById("view-form");
+
+    let update = document.getElementById("update-form");
+
+    registration.addEventListener("click", () => {
+
+    });
+
+    view.addEventListener("click", () => {
+      
+    });
+
+    view.addEventListener("click", () => {
+      
+    });
+
+    click.addEventListener("click",()=>{
+
+        list.classList.toggle('newlist');
+
+    });
+
+</script>
+
+</body>
+</html>
