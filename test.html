@@ -13,11 +13,9 @@
   
   <header>
     <nav class="topnav">
-      
-        <div class="active" id="registration-form"> REGISTRATION FORM </a>
-        <div id="view-form" > VIEW FORM </a>
-        <div id="update-form" > UPDATE FORM </a>
-
+      <h2>
+        DASHBOARD
+      </h2>
     </nav>
   </header>
 
@@ -27,50 +25,42 @@
 
       <div class="container">
 
-        <form action="" method="post">
-          
-          <h2>
-            REGISTRATION FORM
-          </h2>
+        <h2>
+          REGISTRATION FORM
+        </h2>
 
-          <div class="departments">
-            <button class="select"> SELECT A DEPARTMENT </button>
-            <div class="list">
-              <input type="text" class="links" value="RADIOLOGY">
-              <input type="text" class="links" value="OBS AND GYN">
-              <input type="text" class="links" value="SURGERY">
-              <input type="text" class="links" value="ENT">
-              <input type="text" class="links" value="ORTHOPEDICS">
-            </div>
-          </div>
+        <form action="save-data.php" method="post">
+        
+          <label for="departments"> Select A Departments </label>
+          <select id="list" onchange="getSelectValue();">
+            <option value="js">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="c#">Csharp</option>
+            <option value="java">Java</option>
+            <option value="node">Node.js</option>
+          </select>
+
+          <input type="text" name="department-name" placeholder="Department Name" value="" id="selected-department-name">
           
           <label for="equipment"> Equipment Table </label>
-          <div class="equipment">
-            <input type="text" name="equipment-name" placeholder="Equipment Name" required>
-            <input type="text" name="equipment-model" placeholder="Equipment Model" required>
-            <input type="text" name="equipment-manufacturer" placeholder="Equipment Manufacturer Name" required>
-            <input type="text" name="equipment-serial-no" placeholder="Equipment Serial Number" required>
-            <input type="text" name="equipment-status" placeholder="Equipment Status" required>
-            <input type="text" name="equipment-quantity" placeholder="Equipment Quantity" required>
-          </div>
+          <input type="text" name="equipment-name" placeholder="Equipment Name" >
+          <input type="text" name="equipment-model" placeholder="Equipment Model" >
+          <input type="text" name="equipment-manufacturer" placeholder="Equipment Manufacturer Name" >
+          <input type="text" name="equipment-serial-no" placeholder="Equipment Serial Number" >
+          <input type="text" name="equipment-status" placeholder="Equipment Status" >
+          <input type="text" name="equipment-quantity" placeholder="Equipment Quantity" >
 
           <label for="equipment"> Engineers Table </label>
-          <div class="engineers">
-            <input type="text" name="engineer-name" placeholder="Engineer's Name" required>
-          </div>
+          <input type="text" name="engineer-name" placeholder="Engineer's Name" >
 
           <label for="manufacturer"> Manufacturer's Table </label>
-          <div class="engineers">
-            <input type="text" name="manufacturer-name" placeholder="Manufacturer's Name" required>
-            <input type="text" name="manufacturer-country" placeholder="Manufacturer's Country" required>
-          </div>
+          <input type="text" name="manufacturer-name" placeholder="Manufacturer's Name" >
+          <input type="text" name="manufacturer-country" placeholder="Manufacturer's Country" >
 
           <label for="servicing"> ServicingTable </label>
-          <div class="servicing">
-            <input type="datetime-local" name="servicing-date" placeholder="Servicing Date and Time">
-          </div>
+          <input type="datetime-local" name="servicing-date" placeholder="Servicing Date and Time">
 
-          <input type="submit" name="submit" value=" SUBMIT ">
+          <input type="submit" name="submit" value=" REGISTER ">
 
         </form>
 
@@ -88,28 +78,28 @@
         </h2>
 
         <form action="" method="post">
-            
-          <input type="text" name="equipment-name" placeholder="Equipment Name" required>
-            
-          <input type="text" name="equipment-model" placeholder="Equipment Model" required>
-          
-          <input type="text" name="equipment-manufacturer" placeholder="Equipment Manufacturer Name" required>
-          
-          <input type="text" name="equipment-serial-no" placeholder="Equipment Serial Number" required>
-          
-          <input type="text" name="equipment-status" placeholder="Equipment Status" required>
-          
-          <input type="text" name="equipment-quantity" placeholder="Equipment Quantity" required>
 
-          <input type="text" name="engineer-name" placeholder="Engineer's Name" required>
+          <input type="submit" name="submit" value=" VIEW ">
+            
+          <input type="text" name="equipment-name" placeholder="Equipment Name" >
+            
+          <input type="text" name="equipment-model" placeholder="Equipment Model" >
           
-          <input type="text" name="manufacturer-name" placeholder="Manufacturer's Name" required>
+          <input type="text" name="equipment-manufacturer" placeholder="Equipment Manufacturer Name" >
+          
+          <input type="text" name="equipment-serial-no" placeholder="Equipment Serial Number" >
+          
+          <input type="text" name="equipment-status" placeholder="Equipment Status" >
+          
+          <input type="text" name="equipment-quantity" placeholder="Equipment Quantity" >
+
+          <input type="text" name="engineer-name" placeholder="Engineer's Name" >
+          
+          <input type="text" name="manufacturer-name" placeholder="Manufacturer's Name" >
                 
           <input type="text" name="manufacturer-country" placeholder="Manufacturer's Country">
         
           <input type="datetime-local" name="servicing-date" placeholder="Servicing Date and Time">
-        
-          <input type="submit" name="submit" value=" SUBMIT ">
 
         </form>
 
@@ -127,28 +117,30 @@
         </h2>
 
         <form action="" method="post">
-            
-          <input type="text" name="equipment-name" placeholder="Equipment Name" required>
-            
-          <input type="text" name="equipment-model" placeholder="Equipment Model" required>
-          
-          <input type="text" name="equipment-manufacturer" placeholder="Equipment Manufacturer Name" required>
-          
-          <input type="text" name="equipment-serial-no" placeholder="Equipment Serial Number" required>
-          
-          <input type="text" name="equipment-status" placeholder="Equipment Status" required>
-          
-          <input type="text" name="equipment-quantity" placeholder="Equipment Quantity" required>
 
-          <input type="text" name="engineer-name" placeholder="Engineer's Name" required>
+          <input type="submit" name="submit" value=" VIEW ">
+            
+          <input type="text" name="equipment-name" placeholder="Equipment Name" >
+            
+          <input type="text" name="equipment-model" placeholder="Equipment Model" >
           
-          <input type="text" name="manufacturer-name" placeholder="Manufacturer's Name" required>
+          <input type="text" name="equipment-manufacturer" placeholder="Equipment Manufacturer Name" >
+          
+          <input type="text" name="equipment-serial-no" placeholder="Equipment Serial Number" >
+          
+          <input type="text" name="equipment-status" placeholder="Equipment Status" >
+          
+          <input type="text" name="equipment-quantity" placeholder="Equipment Quantity" >
+
+          <input type="text" name="engineer-name" placeholder="Engineer's Name" >
+          
+          <input type="text" name="manufacturer-name" placeholder="Manufacturer's Name" >
                 
           <input type="text" name="manufacturer-country" placeholder="Manufacturer's Country">
         
           <input type="datetime-local" name="servicing-date" placeholder="Servicing Date and Time">
         
-          <input type="submit" name="submit" value=" SUBMIT ">
+          <input type="submit" name="submit" id="update-btn" value=" UPDATE ">
 
         </form>
 
@@ -162,38 +154,20 @@
 
   </footer>
 
-
   <script>
-
-    let click = document.querySelector('.select');
-
-    let list = document.querySelector('.list');
-
-    let registration = document.getElementById("registration-form");
     
-    let view = document.getElementById("view-form");
+    function getSelectValue() {
+    
+      var selectedValue = document.getElementById("list").value;
+    
+      document.getElementById("selected-department-name").value = selectedValue;
+    
+      console.log(selectedValue);
 
-    let update = document.getElementById("update-form");
+    }
 
-    registration.addEventListener("click", () => {
-
-    });
-
-    view.addEventListener("click", () => {
-      
-    });
-
-    view.addEventListener("click", () => {
-      
-    });
-
-    click.addEventListener("click",()=>{
-
-        list.classList.toggle('newlist');
-
-    });
-
-</script>
+  </script>
 
 </body>
+
 </html>
