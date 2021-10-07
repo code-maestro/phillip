@@ -33,14 +33,14 @@
         
           <label for="departments"> Select A Departments </label>
           <select id="list" onchange="getSelectValue();">
-            <option value="js">JavaScript</option>
-            <option value="php">PHP</option>
-            <option value="c#">Csharp</option>
-            <option value="java">Java</option>
-            <option value="node">Node.js</option>
+            <option value="RADIOLOGY"> RADIOLOGY </option>
+            <option value="OBS AND GYN"> OBS AND GYN </option>
+            <option value="SURGERY"> SURGERY </option>
+            <option value="ENT"> ENT </option>
+            <option value="ORTHOPEDICS"> ORTHOPEDICS </option>
           </select>
 
-          <input type="text" name="department-name" placeholder="Department Name" value="" id="selected-department-name">
+          <input type="text" name="department-name" placeholder="Department Name" value="" id="selected-department-name" hidden>
           
           <label for="equipment"> Equipment Table </label>
           <input type="text" name="equipment-name" placeholder="Equipment Name" >
@@ -60,7 +60,7 @@
           <label for="servicing"> ServicingTable </label>
           <input type="datetime-local" name="servicing-date" placeholder="Servicing Date and Time">
 
-          <input type="submit" name="submit" value=" REGISTER ">
+          <input type="submit" name="register" value=" REGISTER ">
 
         </form>
 
@@ -77,28 +77,38 @@
           VIEW FORM
         </h2>
 
-        <form action="" method="post">
+        <form action="read-data.php" method="post">
 
-          <input type="submit" name="submit" value=" VIEW ">
+          <input type="submit" name="view-btn" value=" VIEW ">
             
+          <label for="equipment-name"> Equipment Name </label>
           <input type="text" name="equipment-name" placeholder="Equipment Name" >
-            
+          
+          <label for="equipment-model"> Equipment Model </label>
           <input type="text" name="equipment-model" placeholder="Equipment Model" >
           
+          <label for="equipment-manufacturer"> Equipment Manufacturer Name </label>
           <input type="text" name="equipment-manufacturer" placeholder="Equipment Manufacturer Name" >
           
+          <label for="equipment-serial-no"> Equipment Serial Number </label>
           <input type="text" name="equipment-serial-no" placeholder="Equipment Serial Number" >
           
+          <label for="equipment-status"> Equipment Status </label>
           <input type="text" name="equipment-status" placeholder="Equipment Status" >
           
+          <label for="equipment-quantity"> Equipment Quantity </label>
           <input type="text" name="equipment-quantity" placeholder="Equipment Quantity" >
 
+          <label for="engineer-name"> Engineer's Name </label>
           <input type="text" name="engineer-name" placeholder="Engineer's Name" >
           
+          <label for="manufacturer-name"> Manufacturer's Name </label>
           <input type="text" name="manufacturer-name" placeholder="Manufacturer's Name" >
                 
+          <label for="manufacturer-country"> Manufacturer's Country </label>
           <input type="text" name="manufacturer-country" placeholder="Manufacturer's Country">
         
+          <label for="servicing-date"> Servicing Date and Time </label>
           <input type="datetime-local" name="servicing-date" placeholder="Servicing Date and Time">
 
         </form>
@@ -117,28 +127,37 @@
         </h2>
 
         <form action="" method="post">
-
-          <input type="submit" name="submit" value=" VIEW ">
             
+          <label for="equipment-name"> Equipment Name </label>
           <input type="text" name="equipment-name" placeholder="Equipment Name" >
-            
+          
+          <label for="equipment-model"> Equipment Model </label>
           <input type="text" name="equipment-model" placeholder="Equipment Model" >
           
+          <label for="equipment-manufacturer"> Equipment Manufacturer Name </label>
           <input type="text" name="equipment-manufacturer" placeholder="Equipment Manufacturer Name" >
           
+          <label for="equipment-serial-no"> Equipment Serial Number </label>
           <input type="text" name="equipment-serial-no" placeholder="Equipment Serial Number" >
           
+          <label for="equipment-status"> Equipment Status </label>
           <input type="text" name="equipment-status" placeholder="Equipment Status" >
           
+          <label for="equipment-quantity"> Equipment Quantity </label>
           <input type="text" name="equipment-quantity" placeholder="Equipment Quantity" >
 
+          <label for="engineer-name"> Engineer's Name </label>
           <input type="text" name="engineer-name" placeholder="Engineer's Name" >
           
+          <label for="manufacturer-name"> Manufacturer's Name </label>
           <input type="text" name="manufacturer-name" placeholder="Manufacturer's Name" >
                 
+          <label for="manufacturer-country"> Manufacturer's Country </label>
           <input type="text" name="manufacturer-country" placeholder="Manufacturer's Country">
         
+          <label for="servicing-date"> Servicing Date and Time </label>
           <input type="datetime-local" name="servicing-date" placeholder="Servicing Date and Time">
+
         
           <input type="submit" name="submit" id="update-btn" value=" UPDATE ">
 

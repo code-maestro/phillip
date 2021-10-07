@@ -1,6 +1,6 @@
 <?php
 
-  class DatabaseModule {
+  class Database {
 
     // VARIABLES SPECIFYING THE SERVER AND DATABASE.
     private $server;
@@ -15,12 +15,11 @@
       $this->server = "localhost";
       $this->username = "root";
       $this->password = "";
-      $this->dbname = "β-prototype";
+      $this->dbname = "db";
 
       try {
 
         $conn = new mysqli(
-
           // Local development
           $this->server,
           $this->username,
@@ -28,6 +27,7 @@
           $this->dbname
 
         );
+
       } catch (Exception $e) {
 
         echo "connection to the database failed " . $e->getMessage();
@@ -37,6 +37,7 @@
       return $conn;
       
     }
+
 
     //READ FUNCTION/METHOD TO RETRIEVE DATA PASSED TO IT WHEN IT'S CALLED
     public function readData($query){
@@ -62,7 +63,9 @@
         return $data;
 
       }
+
     }
+
 
     //SAVE METHOD TO STORE THE DATA PASSED TO IT WHEN IT'S CALLED
     public function saveData($query){
@@ -78,10 +81,14 @@
         return false;
 
       }else {
+
         return true;
+
       }
+
     }
 
   }
+
 
   ?>

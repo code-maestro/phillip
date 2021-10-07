@@ -5,6 +5,11 @@ main{
   flex-direction: row;
 }
 
+h2 {
+  margin-block-start: 0.30em;
+  margin-block-end: 0.30em;
+}
+
 main section {
   padding: 0 2.5rem;
 }
@@ -16,10 +21,12 @@ main section {
 }
 
 /* Style the links inside the navigation bar */
-.topnav h2 {
+.topnav p {
   color: #f2f2f2;
   text-align: center;
-  padding: 1rem;
+  font-weight: bold;
+  margin: 0;
+  padding: .45rem;
   text-decoration: none;
   font-size: 17px;
 }
@@ -43,4 +50,8 @@ main section {
 .topnav div:hover {
   background-color: #ddd;
   color: black;
+}
+
+#selected-department-name {
+  display: none;
 }
